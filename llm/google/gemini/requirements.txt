@@ -1,0 +1,9 @@
+python-dotenv
+langchain
+langchain-google-vertexai
+langchain-google-genai
+google-generativeai
+dashscope
+qdrant-client
+faiss-cpu
+sentence-transformers
