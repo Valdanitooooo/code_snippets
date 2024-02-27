@@ -12,7 +12,7 @@ def llm_test():
 
 
 def chain_test():
-    system = "You are a helpful assistant who translate English to French"
+    system = "You are a helpful assistant."
     human = "Translate this sentence from English to {input}. I love programming."
     prompt = ChatPromptTemplate.from_messages([("system", system), ("human", human)])
     llm = ChatGoogleGenerativeAI(model="gemini-pro", transport='rest', convert_system_message_to_human=True)
