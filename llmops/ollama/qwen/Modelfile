@@ -1,0 +1,14 @@
+From /Users/valdanito/workspace/llmops/models/qwen/qwen1_5-1_8b-chat-q5_0.gguf
+
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+SYSTEM """You are a helpful assistant."""
+PARAMETER stop <|endoftext|>
+PARAMETER stop <|im_start|>
+PARAMETER stop <|im_end|>
+
+
